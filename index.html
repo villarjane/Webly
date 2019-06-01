@@ -25,17 +25,23 @@
           <a href="#!" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-bars"></i></a>
 
           <ul class="right hide-on-med-and-down">
-            <li><a href="messages.html" class="grey-text text-darken-3 active-link"><i class="far fa-comment"></i></a></li>
+            <li><a href="" class="grey-text text-darken-5 active-link"><i class="far fa-comment"></i></a></li>
             <li>
-                <a href="#!" class="">
-                    <img src="img/person1.jpg" class="responsive-img circle" style="width:40px; margin-top:10px">
+                <a href="#" class="dropdown-trigger" data-activates='avatar'>
+                    <img src="img/person1.jpg" class="waves-effect responsive-img circle" style="width:40px; ">
                 </a>
             </li>
-            
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Dropdown Structure -->
+    <ul id="avatar" class="dropdown-content right">
+      <li><a href="#" class="grey-text text-darken-3">My Profile</a></li>
+      <li class="divider"></li>
+      <li><a href="#" class="grey-text text-darken-3">Logout</a></li>
+    </ul>
     
     <!-- Navigation for Pages -->
         <nav class="nav-pages transparent">
@@ -60,6 +66,14 @@
    <!--Import jQuery before materialize.js-->
    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
    <script type="text/javascript" src="js/materialize.min.js"></script>
-   
+   <script>
+      $('.dropdown-trigger').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+   </script>
 
 </html>

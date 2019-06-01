@@ -2,6 +2,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: #eeeeee;
+    font-size: 13px;
 }
 
 /* Navigation */
@@ -21,10 +22,6 @@ body{
 nav.white, .nav-pages {
     box-shadow: 0 0 0 0 !important;
     border-bottom: 1px solid #e0e0e0 !important;
-}
-
-.nav-wrapper ul li a:hover {
-    height: 63px;
 }
 
 .nav-pages ul li a{
