@@ -15,17 +15,17 @@
 </head>
 
   <!-- Header -->
-<header class="main-header">
+<header class="main-header navbar-fixed">
     <nav class="white">
       <div class="container">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo grey-text text-darken-3">Web<span class="ly white-text blue">ly</span>
-            <span class="vert-div grey-text text-lighten-1">|</span>
+            <span class="vert-div grey-text text-lighten-1 hide-on-med-and-down">|</span>
           </a>
           <a href="#!" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-bars"></i></a>
 
           <ul class="right hide-on-med-and-down">
-            <li><a href="" class="grey-text text-darken-5 active-link"><i class="far fa-comment"></i></a></li>
+            <li><a href="" class="waves-effect grey-text text-darken-5"><i class="far fa-comment"></i></a></li>
             <li>
                 <a href="#" class="dropdown-trigger" data-activates='avatar'>
                     <img src="img/person1.jpg" class="waves-effect responsive-img circle" style="width:40px; ">
@@ -44,11 +44,11 @@
     </ul>
     
     <!-- Navigation for Pages -->
-        <nav class="nav-pages transparent">
+        <nav class="nav-pages transparent hide-on-med-and-down">
             <div class="container row">
                 <div class="nav-wrapper col s12 offset-m4 m4 offset-m4">    
                     <ul class="hide-on-med-and-down">
-                        <li><a href="#!" class="active">Home</a></li>
+                        <li><a href="#!" class="actived">Home</a></li>
                         <li><a href="#!" class="grey-text">Posts</a></li>
                         <li><a href="#!" class="grey-text">Files</a></li>
                     </ul>
@@ -57,11 +57,117 @@
         </nav>
   </header>
 
-  <!-- <footer class="white grey-text center">
-      <div class="content">
-        www.webly.ph &copy; 2019 Copyright
+  <!-- Contents -->
+  <section class="section section-home">
+    <div class="container">
+      <div class="row">
+
+        <!-- Left Profile -->
+        <div class="card-profile col s12 m3 hide-on-med-and-down">
+          <div class="card white grey-text text-darken-3 z-depth-0 card-border">
+            <div class="card-image circle">
+                <img src="img/person1.jpg">
+                <span class="card-title name">
+                  John Doe <br>
+                  <span style="font-size: 12px;">UI/UX Developer</span> 
+                </span> 
+            </div>
+            <div class="card-content"> 
+               <div class="row">
+                 <div class="col s12 m6 center">
+                    <p class="blue-text"><b>7.5k</b></p>
+                    <label>Connections</label>
+                 </div>
+                 <div class="col s12 m6 center">
+                    <p class="blue-text"><b>1.5k</b></p>
+                    <label>Favorites</label>
+                 </div>
+               </div>
+               <div class="row view-profile-btn">
+                  <div class="col s12 center">
+                      <a href="#" class="waves-effect btn blue z-depth-0">View Profile</a>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="centered-content col s12 m6">
+          <!-- Posting -->
+          <div class="row" style="margin-bottom: 0px;">
+            <div class="col s12">
+              <div class="card new-post card-border z-depth-0">
+                
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width border-bottom">
+                    <li class="tab"><a href="#tab1" class="active grey-text text-darken-3"><i class="fas fa-pen blue-text"></i> Share an article</a></li>
+                    <li class="tab"><a href="#tab2" class="grey-text text-lighten-1"><i class="fas fa-image green-text"></i> Share a photo </a></li>
+                  </ul>
+                </div>
+
+                <div class="card-content">
+                  <div id="tab1" class="active">
+                    <input placeholder="Write Something ..." style="margin-bottom: 0; font-size:14px;"></i>
+                  </div>
+                  <div id="tab2">
+                   <div class="box"><i class="fas fa-folder-plus fa-3x grey-text text-lighten-1"></i></div>
+                  </div>
+                </div>
+
+                <div class="card-action" style="padding-bottom: 25px; padding-right: 0;">
+                  <a href="#" class="right grey-text">Share</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Posted -->
+          <div class="row section-posted">
+            <div class="col s12">
+              <div class="card z-depth-0 card-border">
+                  <div class="row" style="margin-bottom: 0px;">
+                    <div class="col s12">
+                      <table class="post-card">
+                        <tbody>
+                          <tr class="border-bottom">
+                            <td width="50px;"><img src="img/person3.jpg" class="circle responsive-img" width="55px;"></td>
+                            <td><h6 style="margin-top:0;">Jane Doe <br> <label>Graphic Designer</label></h6></td>
+                            <td><label class="valign-wrapper right">3 hours ago</label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="card-content col s12 ">
+                      <p class="grey-text text-darken-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nisi incidunt officiis iste illum voluptatem eveniet? officiis iste illum voluptatem eveniet?<u class="blue-text">https/sample.com</u></p>
+                    </div>
+                  </div>
+
+                  <div class="card-action icon-on-posts" style=" padding: 10px 10px 3px 10px;">
+                      <label style="font-size: 12px;">
+                          <a href=""class="blue-text text-lighten-1"><i class="far fa-star"></i> 15</a>
+                          <a href=""class="green-text text-lighten-1"><i class="far fa-comment-alt"></i> 5</a>
+                          <a href=""class="amber-text text-lighten-1"><i class="far fa-bookmark"></i></a>            
+                      </label>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+        
+        </div>
+        
+
+        <!-- Right Content -->
+        <div class="col s12 m3">
+          
+        </div>
+        
       </div>
-  </footer> -->
+    </div>
+  </section>
+  
 
    <!--Import jQuery before materialize.js-->
    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
