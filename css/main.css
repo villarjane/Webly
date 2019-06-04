@@ -3,18 +3,26 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: #f7f8f9;
-    font-size: 13px !important;
+    font-size: 14px !important;
 }
 
 .card-border{
     border: 1px solid #e0e0e0 !important;
 }
+
 .border-bottom{
     border-bottom: 1px solid #e0e0e0 !important;
 }
 
+u{
+    color: #2196f3;
+    font-size: 12px !important;
+}
 
 /* Navigation */
+.nav-pages{
+    background: #f7f8f9 !important;
+}
 .brand-logo {
     font-size: 23px !important;
 }
@@ -38,11 +46,6 @@ nav.white, .nav-pages {
     color: #2196f3 !important;
 }
 
-.nav-pages ul li a:hover{
-    background: transparent !important;
-    border-bottom: 2px solid #2196f3 !important;
-}
-
 .actived{
    color: #292828;
    border-bottom: 2px solid #2196f3 !important;
@@ -56,12 +59,6 @@ footer .content{
 .dropdown-content li a{
     font-size: 14px;
 }
-/* .dropdown-content li:hover{
-    background: #2196f3 !important;
-}
-.dropdown-content a:hover{
-    color: white !important;
-} */
 
 /* Section-Home */
 
@@ -75,6 +72,11 @@ footer .content{
 
 .section-home .card-profile .card-content {
     padding: 15px 15px 0 15px !important;
+}
+
+/* Profile */
+.card .card-image img{
+    width: 216px !important;
 }
 
 /* Posting */
@@ -111,6 +113,7 @@ footer .content{
 .centered-content .card-action a:hover{
     color: #2196f3 !important;
 }
+/* Profile */
 
 /* Posted */
 table.post-card tbody tr td{
@@ -118,10 +121,20 @@ table.post-card tbody tr td{
     padding-bottom: 5px;
 }
 
-/* .section-posted .card {
-    height: 154px !important;
-} */
 
-.icon-on-posts .fa-star:hover{
-    color: red;
+.card-comments input:not([type]){
+    border-bottom: none !important;
+}
+.card-comments input:not([type]):focus {
+    border-bottom: none !important;
+}
+.card-comments input:not([type]):focus:not([readonly]){
+    border-bottom: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* Right content */
+.connect li:hover{
+    background: #eeeeee;
 }
