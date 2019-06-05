@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +30,7 @@
                 <ul class="hide-on-med-and-down">
                     <li><a href="#!" class="actived">Posts</a></li>
                     <li><a href="#!" class="grey-text">Articles</a></li>
-                    <li><a href="#!" class="grey-text">Files</a></li>
+                    <li><a href="saved.html" class="grey-text">Saved Posts</a></li>
                 </ul>
             </div>
             <div class="col s12 m4">
@@ -56,16 +57,8 @@
     <ul id="avatar" class="dropdown-content right">
       <li><a href="#" class="grey-text text-darken-3">My Profile</a></li>
       <li class="divider"></li>
-      <li><a href="#" class="grey-text text-darken-3">Logout</a></li>
+      <li><a href="profile.html" class="grey-text text-darken-3">Logout</a></li>
     </ul>
-    
-    <!-- Navigation for Pages -->
-        <!-- <nav class="nav-pages transparent hide-on-med-and-down">
-            <div class="container row">
-                
-            </div>
-        </nav>
-      </div> -->
   </header>
 
   <!-- Contents -->
@@ -79,25 +72,24 @@
           <div class="pinned card white grey-text text-darken-3 z-depth-0 card-border">
             <div class="card-image">
                 <img src="img/person1.jpg">
-                <span class="card-title name">
-                  John Doe <br>
+                <span class="card-title name">John Doe <br>
                   <span style="font-size: 12px;">UI/UX Developer</span> 
                 </span> 
             </div>
             <div class="card-content"> 
                <div class="row">
-                 <div class="col s12 m6 center" style="border-right: 1px solid #eeeeee">
+                 <div class="col s12 m6 waves-effect center" style="border-right: 1px solid #eeeeee; border-radius:1px;">
                     <p class="blue-text"><b>7.5k</b></p>
                     <label>Connections</label>
                  </div>
-                 <div class="col s12 m6 center">
+                 <div class="col s12 m6 center waves-effect" style="border-radius:1px;">
                     <p class="blue-text"><b>1.5k</b></p>
                     <label>Favorites</label>
                  </div>
                </div>
                <div class="row view-profile-btn">
                   <div class="col s12 center">
-                      <a href="#" class="waves-effect btn blue z-depth-0">View Profile</a>
+                      <a href="profile.html" class="waves-effect btn blue z-depth-0">View Profile</a>
                   </div>
                </div>
             </div>
@@ -106,6 +98,7 @@
 
         <!-- Center Content -->
         <div class="centered-content col s12 m6">
+          
           <!-- Posting -->
           <div class="row" style="margin-bottom: 0px;">
             <div class="col s12">
@@ -120,19 +113,69 @@
 
                 <div class="card-content">
                   <div id="tab1" class="active">
-                    <input placeholder="Write Something ..." style="margin-bottom: 0; font-size:14px;"></i>
+                    <input id="post" placeholder="Write Something ..." style="margin-bottom: 0; font-size:14px;"></i>
                   </div>
                   <div id="tab2">
                    <div class="box"><i class="fas fa-folder-plus fa-3x grey-text text-lighten-1"></i></div>
                   </div>
                 </div>
 
-                <div class="card-action" style="padding-bottom: 25px; padding-right: 0;">
-                  <a href="#" class="right grey-text">Share</a>
+                <div class="card-action" style="padding-top: 10px; padding-bottom: 30px; padding-right: 0;">
+                    <a id="post-it" href="#" class="right grey-text waves-effect" style="padding: 5px 8px; border-radius:2px;">Share</a>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="place-it-here row section-posted" style="margin-bottom: 0px;"></div>
+
+          <!-- Posted Style: No comment-->
+          <div class="row section-posted" style="margin-bottom: 0px;">
+              <div class="col s12" >
+                <div class="card z-depth-0 card-border">
+                    <div class="row" style="margin-bottom: 0px;">
+                      <div class="col s12">
+                        <table class="post-card">
+                          <tbody>
+                            <tr class="border-bottom">
+                              <td width="50px;"><img src="img/person3.jpg" class="circle responsive-img" width="55px;"></td>
+                              <td><h6 style="margin-top:0;">Jane Doe <br> <label>Graphic Designer</label></h6></td>
+                              <td><label class="valign-wrapper right">30 minutes ago</label></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+  
+                      <div class="card-content col s12 ">
+                        <p class="grey-text text-darken-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, nisi incidunt officiis iste illum voluptatem eveniet? officiis iste illum voluptatem eveniet? <u class="blue-text">https/sample.com</u></p>
+                      </div>
+                    </div>
+  
+                    <div class="card-action icon-on-posts border-bottom" style="padding: 10px 10px 10px 10px;">
+                        <label style="font-size: 12px;">
+                            <a href="#!" class="blue-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-star"></i> 1.5k</a>
+                            <a href="#!" class="green-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-comment-alt"></i> 500</a>
+                            <a href="#!" class="amber-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-bookmark"></i> 300</a>
+                        </label>
+                    </div>
+  
+                    <!-- Comments Section -->
+                    <div class="card-comments">
+                        <table class="comment-content">
+                            <tbody class="add-comments-here"></tbody>
+                            <tbody>
+                              <tr>
+                                  <td width="50px;"></td>
+                                  <td style="padding: 0px;"><input id="new-comment" placeholder="Add Comment" style="margin-bottom: 0; font-size:12px;"></i></td>
+                                  <td><a href="#!" id="add-comment"><i class="far fa-paper-plane green-text waves-effect circle" style="font-size:18px; padding:8px;"></i></a></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+  
+                </div>
+              </div>
+            </div>
 
           <!-- Posted Style 1-->
           <div class="row section-posted" style="margin-bottom: 0px;">
@@ -158,9 +201,9 @@
 
                   <div class="card-action icon-on-posts border-bottom" style="padding: 10px 10px 10px 10px;">
                       <label style="font-size: 12px;">
-                          <a href="#!" class="blue-text text-lighten-1"><i class="far fa-star"></i> 100 </a>
-                          <a href="#!" class="green-text text-lighten-1"><i class="far fa-comment-alt"></i> 35</a>
-                          <a href="#!" class="amber-text text-lighten-1"><i class="far fa-bookmark"></i> 5</a>
+                          <a href="#!" class="blue-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-star"></i> 1.5k</a>
+                          <a href="#!" class="green-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-comment-alt"></i> 500</a>
+                          <a href="#!" class="amber-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-bookmark"></i> 300</a>
                       </label>
                   </div>
 
@@ -168,20 +211,23 @@
                   <div class="card-comments">
                       <table class="comment-content">
                           <tbody>
-                            <tr class="border-bottom">
+                            <tr class="border-bottom row-of-comment">
                               <td width="50px;"><img src="img/person3.jpg" class="circle responsive-img" width="55px;"></td>
                               <td><h6 style="margin-top:0;">Kenneth Smith <br> <label>Lorem ipsum dolor sit amet.</label></h6></td>
-                              <td><label class="valign-wrapper right" style="font-size:10px;">3 hours ago</label></td>
+                              <td><label id="delete-comment" class="valign-wrapper right red-text text-lighten-2" style="font-size:15px;"><i class="far fa-trash-alt"></i></label></td>
+                              </td>
                             </tr>
-                            <tr class="border-bottom">
+
+                            <tr class="border-bottom row-of-comment">
+                                <tr class="border-bottom ">
                                 <td width="50px;"><img src="img/person3.jpg" class="circle responsive-img" width="55px;"></td>
                                 <td><h6 style="margin-top:0;">Grace Love <br> <label>Lorem ipsum dolor sit amet.</label></h6></td>
-                                <td><label class="valign-wrapper right" style="font-size:10px;">3 hours ago</label></td>
+                                <td><label id="delete-comment" class="valign-wrapper right red-text text-lighten-2" style="font-size:15px;"><i class="far fa-trash-alt"></i></label></td>
                             </tr>
                             <tr>
                                 <td width="50px;"></td>
                                 <td style="padding: 0px;"><input placeholder="Add Comment" style="margin-bottom: 0; font-size:12px;"></i></td>
-                                <td><a href="#!"><i class="far fa-paper-plane green-text" style="font-size:18px;"></i></a></td>
+                                <td><a href="#!"><i class="far fa-paper-plane green-text waves-effect circle" style="font-size:18px; padding:8px;"></i></a></td>
                             </tr>
                           </tbody>
                       </table>
@@ -189,7 +235,6 @@
               </div>
             </div>
           </div>
-
 
           <!-- Posted Style 2 -->
           <div class="row section-posted" style="margin-bottom: 0px;">
@@ -216,8 +261,8 @@
                         <div class="col s12 m7">
                             <p class="grey-text text-darken-3" style="font-weight: 700;">Compliment right colors </p> <br>
                             <p class="grey-text text-darken-3">
-                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro expedita, ullam totam magni aspernatur, assumenda vel veniam laudantium iste repudiandae earum dicta repellendus, modi harum voluptatem qui necessitatibus eaque dignissimos!<br>
-                              <u class="blue-text">Read More</u>
+                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro expedita, ullam totam magni aspernatur, assumenda vel veniam laudantium iste repudiandae earum dicta repellendus!<br>
+                              <a href="#!" class="blue-text"> <u>Read More</u></a>
                             </p>
                         </div>
                       </div>
@@ -227,9 +272,12 @@
 
                   <div class="card-action icon-on-posts border-bottom" style="padding: 10px 10px 10px 10px;">
                       <label style="font-size: 12px;">
-                          <a href="#!" class="blue-text text-lighten-1"><i class="far fa-star"></i> 100 </a>
-                          <a href="#!" class="green-text text-lighten-1"><i class="far fa-comment-alt"></i> 50</a>
-                          <a href="#!" class="amber-text text-lighten-1"><i class="far fa-bookmark"></i> 10</a>
+                          <a href="#!" id="fave" class="blue-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;">
+                            <i class="far fa-star"></i> 1.5k</a>
+                          <a href="#!" class="green-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;">
+                            <i class="far fa-comment-alt"></i> 500</a>
+                            <a href="#modal2" id="saved" class="amber-text text-lighten-1 waves-effect modal-trigger" style="padding:5px; border-radius:2px;">
+                                <i class="far fa-bookmark"></i> 300</a>
                       </label>
                   </div>
 
@@ -237,15 +285,10 @@
                    <div class="card-comments">
                       <table class="comment-content">
                           <tbody>
-                            <tr class="border-bottom">
-                              <td width="50px;"><img src="img/person3.jpg" class="circle responsive-img" width="55px;"></td>
-                              <td><h6 style="margin-top:0;">Jane Doe <br> <label>Lorem ipsum dolor sit amet.</label></h6></td>
-                              <td><label class="valign-wrapper right" style="font-size:10px;">3 hours ago</label></td>
-                            </tr>
                             <tr>
                                 <td width="50px;"></td>
                                 <td style="padding: 0px;"><input placeholder="Add Comment" style="margin-bottom: 0; font-size:12px;"></i></td>
-                                <td><a href="#!"><i class="far fa-paper-plane green-text" style="font-size:18px;"></i></a></td>
+                                <td><a href="#!"><i class="far fa-paper-plane green-text waves-effect circle" style="font-size:18px; padding:8px;"></i></a></td>
                             </tr>
                           </tbody>
                       </table>
@@ -276,7 +319,7 @@
                       <div class="row" style="margin-bottom: 0px;">
                         <div class="col s12">
                             <p class="grey-text text-darken-3" style="font-size: 12px;">
-                              Create a layout design, read it here <u>https://creativelayouts.com</u>
+                              Create a layout design, read it here <a href="#!" class="blue-text"> <u>https://creativelayouts.com</u></a> 
                             </p> <br>
                             <img src="img/cardImg2.jpeg" alt="" width="100%">
                         </div>
@@ -286,15 +329,51 @@
 
                   <div class="card-action icon-on-posts" style="padding: 10px 10px 10px 10px;">
                       <label style="font-size: 12px;">
-                          <a href="#!" class="blue-text text-lighten-1"><i class="far fa-star"></i> 1.5k</a>
-                          <a href="#!" class="green-text text-lighten-1"><i class="far fa-comment-alt"></i> 500</a>
-                          <a href="#!" class="amber-text text-lighten-1"><i class="far fa-bookmark"></i> 300</a>
+                          <a href="#!" class="blue-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;">
+                            <i class="far fa-star"></i> 1.5k</a>
+                          <a href="#!" class="green-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;">
+                            <i class="far fa-comment-alt"></i> 500</a>
+                          <a href="#modal1" id="saved" class="amber-text text-lighten-1 waves-effect modal-trigger" style="padding:5px; border-radius:2px;">
+                            <i class="far fa-bookmark"></i> 300</a>
                       </label>
                   </div>
-
               </div>
             </div>
           </div>
+        
+          <!-- MODAL -->
+          <div id="modal1" class="modal hide-on-small-only" style="width:40%">
+            <div class="modal-content row" style="margin-bottom: 0px;">
+                    <div class="col s2 m2">
+                        <a class="btn-floating amber z-depth-0 right"><i class="fas fa-bookmark white-text circle"></i></a>
+                    </div>
+                    <div class="col s8 m8">
+                      <p class="grey-text text-darken-4 left-align" style="font-weight: 700; margin: 0px 0 0px 0;">You've saved this post!</p>
+                      <label class="grey-text text-darken-2">Lorem ipsum dolor sit amet consectetur!</span>
+                    </div>
+            </div>
+            <div class="modal-footer center">
+                <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">View Saved Post</a>
+              </div>
+          </div>
+
+          <div id="modal2" class="modal bottom-sheet">
+              <div class="modal-content row" style="margin-bottom: 0px;">
+                  <div class="col s2 m2">
+                      <a class="btn-floating amber z-depth-0 right"><i class="fas fa-bookmark white-text circle"></i></a>
+                  </div>
+                  <div class="col s8 m8">
+                    <p class="grey-text text-darken-4 left-align" style="font-weight: 700; margin: 0px 0 0px 0;">You've saved this post!</p>
+                    <label class="grey-text text-darken-2">Lorem ipsum dolor sit amet consectetur!</span>
+                  </div>
+              </div>
+              <div class="modal-footer center">
+                <a href="#!" class="modal-close waves-effect waves-yellow btn-flat">View Saved Post</a>
+              </div>
+            </div>
+        
+        
+  
       </div>
 
         
@@ -303,44 +382,46 @@
           <div class="card-panel white pinned z-depth-0 card-border">
             <p style="margin-top: 0px; font-size:13px">Get to know others</p>
             <div class="divider"></div>
-            <ul class="connect">
-              <li style="padding: 5% 5% 0 5%">
-                  <div class="row" style="margin-bottom: 0px;">
+            <ul>
+              <li>
+                  <div class="row waves-effect connect" style="margin-bottom: 0px; padding: 4% 5% 0 5%">
                     <div class="col s4"> <img src="img/person4.jpg" class="circle" width="50px;"></div>
                     <div class="col s8">
                         <label class="black-text text-darken-3">Andrei Laya</label> <br>
                         <label>Project Manager</label>
                     </div>
+                  </div>
               </li>
-              <li style="padding: 5% 5% 0 5%">
-                  <div class="row" style="margin-bottom: 0px;">
+              <li>
+                  <div class="row waves-effect connect" style="margin-bottom: 0px; padding: 4% 5% 0 5%">
                     <div class="col s4"> <img src="img/person4.jpg" class="circle" width="50px;"></div>
                     <div class="col s8">
                         <label class="black-text text-darken-3">Andrei Laya</label> <br>
                         <label>Project Manager</label>
                     </div>
+                  </div>
               </li>
-              <li style="padding: 5% 5% 0 5%">
-                  <div class="row" style="margin-bottom: 0px;">
+              <li>
+                  <div class="row waves-effect connect" style="margin-bottom: 0px; padding: 4% 5% 0 5%">
                     <div class="col s4"> <img src="img/person4.jpg" class="circle" width="50px;"></div>
                     <div class="col s8">
                         <label class="black-text text-darken-3">Andrei Laya</label> <br>
                         <label>Project Manager</label>
                     </div>
+                  </div>
               </li>
-              <li style="padding: 5% 5% 0 5%">
-                  <div class="row" style="margin-bottom: 0px;">
+              <li>
+                  <div class="row waves-effect connect" style="margin-bottom: 0px; padding: 4% 5% 0 5%">
                     <div class="col s4"> <img src="img/person4.jpg" class="circle" width="50px;"></div>
                     <div class="col s8">
                         <label class="black-text text-darken-3">Andrei Laya</label> <br>
                         <label>Project Manager</label>
                     </div>
+                  </div>
               </li>
             </ul>
           </div>
         </div>
-        
-
       </div>
     </div>
   </section>
@@ -362,7 +443,79 @@
         alignment: 'left'
       });
 
+      // Add Post
+    $('#post-it').click(function(e){
+      const output = `<div class="col s12" >
+              <div class="card z-depth-0 card-border">
+                  <div class="row" style="margin-bottom: 0px;">
+                    <div class="col s12">
+                      <table class="post-card">
+                        <tbody>
+                          <tr class="border-bottom">
+                            <td width="50px;"><img src="img/person1.jpg" class="circle responsive-img" width="55px;"></td>
+                            <td><h6 style="margin-top:0;">John Doe <br> <label>UI/UX Designer</label></h6></td>
+                            <td><label class="valign-wrapper right">1 second ago</label></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
+                    <div class="card-content col s12 ">
+                      <p class="grey-text text-darken-3">
+                          ${$('#post').val()}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card-action icon-on-posts border-bottom" style="padding: 10px 10px 10px 10px;">
+                      <label style="font-size: 12px;">
+                          <a href="#!" class="blue-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-star"></i> 1.5k</a>
+                          <a href="#!" class="click-comment green-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-comment-alt"></i> 500</a>
+                          <a href="#!" class="amber-text text-lighten-1 waves-effect" style="padding:5px; border-radius:2px;"><i class="far fa-bookmark"></i> 300</a>
+                      </label>
+                    </div>
+                    `;
+      $('.place-it-here').append(output);
+      Materialize.toast("New Post Added!", 2000, "rounded");
+      e.preventDefault();
+    });
+
+    //ADD Comment
+    $('#add-comment').click(function(e){
+
+      setTimeout(() =>{
+          $('.add-comments-here').addClass('grey lighten-3');
+        }, 1000);
+    
+      const output = `<tr class="border-bottom row-of-comment">
+                      <td width="50px;"><img src="img/person3.jpg" class="circle responsive-img" width="55px;"></td>
+                      <td><label style="margin-top:0;"> John Doe <br> <span class="grey-text text-darken-3" style="font-size:14px;"> ${$('#new-comment').val()} </span></label></td>
+                      <td><label id="delete-comment" class="valign-wrapper right red-text text-lighten-2" style="font-size:15px;"><i class="far fa-trash-alt"></i></label></td>
+                      </tr>`;
+     
+      $('.add-comments-here').append(output);
+      Materialize.toast("John Doe commented on your post!", 3000, "rounded");
+      e.preventDefault();
+
+    });
+
+    // Delete Comment
+    $('#delete-comment').on('click', function(e){
+        $(this).parents('.row-of-comment').remove();
+        Materialize.toast("Comment deleted", 3000, "rounded")
+        e.preventDefault();
+    });
+  
+    // Favorite
+    $('#fave').click(function(){
+        Materialize.toast("You favorite a post", 3000, "rounded")
+    });
+
+    $('.modal').modal({
+        dismissible: true,
+        inDuration: 300,
+        outDuration: 200,
+      });
 
    </script>
 

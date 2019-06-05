@@ -75,8 +75,8 @@ footer .content{
 }
 
 /* Profile */
-.card .card-image img{
-    width: 216px !important;
+.card-profile .card .card-image img{
+    width: 203px !important;
 }
 
 /* Posting */
@@ -121,7 +121,6 @@ table.post-card tbody tr td{
     padding-bottom: 5px;
 }
 
-
 .card-comments input:not([type]){
     border-bottom: none !important;
 }
@@ -135,6 +134,26 @@ table.post-card tbody tr td{
 }
 
 /* Right content */
-.connect li:hover{
+.connect:hover{
     background: #eeeeee;
+}
+
+/* .loader{
+    position: absolute;
+    top: 40%;
+    left: 47%;
+} */
+
+.toast {
+    background-color: #4c84ff !important;
+    color: #f5faff !important; 
+    font-size: 13px !important; 
+}
+
+#modal1.modal {
+    /* background-color: #fafafa;
+    height: 92px;
+    width: 34%;
+    border-radius: 0px; */
+    overflow:hidden;
 }
