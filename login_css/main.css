@@ -1,0 +1,51 @@
+body{
+  background-image: radial-gradient(white,#4c85ff) ;
+  
+  
+}
+
+#carddesign{
+  /* margin-left:35%;
+  margin-right:35%;
+  margin-top:5%; */
+  border-radius:5px;
+  background-color:white;
+  margin-top:15%;
+}
+
+#create{
+text-decoration: underline;
+}
+
+#login{
+  
+  margin-right:-24.5px;
+  margin-left:-24.5px;
+  font-size:50px;
+}
+
+/* .card{
+  
+margin-left:33%;
+margin-right:33%;
+margin-top:50px;
+padding-right:40px;
+padding-left:40px;
+}
+
+.card .card-content{
+padding-top:0%;
+margin-top: -5%;
+text-decoration: underline;
+
+}
+
+#reveal{
+  margin-top:-5%;
+}
+
+#login h2{
+ background-color:skyblue;
+
+} */
+
